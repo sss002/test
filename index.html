@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 교육 웹사이트</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #030712;
+        }
+        .glow {
+            text-shadow: 0 0 20px rgba(99, 102, 241, 0.5), 0 0 40px rgba(139, 92, 246, 0.3);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        }
+    </style>
+</head>
+<body class="text-white font-sans">
+    <!-- Header -->
+    <header class="glass rounded-b-lg p-4 mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-bg bg-clip-text text-transparent">
+                AI Academy
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-indigo-400 transition">홈</a>
+                <a href="#" class="hover:text-indigo-400 transition">코스</a>
+                <a href="#" class="hover:text-indigo-400 transition">커뮤니티</a>
+            </nav>
+            <button class="gradient-bg px-6 py-2 rounded-full font-semibold hover:opacity-80 transition">
+                시작하기
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-16 text-center">
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 glow">
+            AI의 미래를 배우다
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8">
+            생성형 AI의 최신 트렌드를 마스터하고 미래를 선도하세요
+        </p>
+        <button class="gradient-bg px-8 py-4 rounded-full text-xl font-semibold hover:opacity-80 transition">
+            지금 시작하기
+        </button>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12">AI 기술 카테고리</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 텍스트 생성 -->
+            <div class="glass rounded-2xl p-8 hover:scale-105 transition transform">
+                <div class="text-6xl mb-4 text-indigo-400">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">텍스트 생성</h3>
+                <p class="text-gray-300">
+                    GPT와 같은 모델을 활용한 창의적인 텍스트 생성 기술을 배우세요.
+                </p>
+            </div>
+            <!-- 이미지 생성 -->
+            <div class="glass rounded-2xl p-8 hover:scale-105 transition transform">
+                <div class="text-6xl mb-4 text-violet-400">
+                    <i class="fas fa-image"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">이미지 생성</h3>
+                <p class="text-gray-300">
+                    DALL-E와 Stable Diffusion으로 AI가 생성하는 예술 작품을 탐구하세요.
+                </p>
+            </div>
+            <!-- 코드 생성 -->
+            <div class="glass rounded-2xl p-8 hover:scale-105 transition transform md:col-span-2 lg:col-span-1">
+                <div class="text-6xl mb-4 text-purple-400">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">코드 생성</h3>
+                <p class="text-gray-300">
+                    GitHub Copilot과 같은 도구로 효율적인 코드 생성을 마스터하세요.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass rounded-t-lg p-8 mt-16">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-8 mb-4">
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-discord"></i></a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 AI Academy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
